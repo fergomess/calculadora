@@ -1,0 +1,67 @@
+<div class="container">
+    <h1>{{title}}</h1>
+    <p> Esta calculadora foi desenvolvida utilizando Angular.</p>
+    <div>
+        <br/>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="calc" value="{{calculadora}}" disabled/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-primary btn-xs" title="Sete" (click)="Numero(7)">7</button>
+                </td>
+                <td>
+                    <button class="btn btn-primary btn-xs" title="Oito" (click)="Numero(8)">8</button>
+                </td>
+                <td>
+                    <button class="btn btn-primary btn-xs" title="Nove" (click)="Numero(9)">9</button>
+                </td>
+                <td>
+                    <button class="btn btn-success btn-xs" title="Subtrair" (click)="Subtrair()"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-primary btn-xs" title="Quatro" (click)="Numero(4)">4</button>
+                </td>
+                <td>
+                    <button class="btn btn-primary btn-xs" title="Cinco" (click)="Numero(5)">5</button>
+                </td>
+                <td>
+                    <button class="btn btn-primary btn-xs" title="Seis" (click)="Numero(6)">6</button>
+                </td>
+                <td>
+                    <button class="btn btn-success btn-xs" title="Somar" value="+" style="border: none;" (click)="Somar()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-primary btn-xs" title="Um" (click)="Numero(1)">1</button>
+                </td>
+                <td>
+                    <button class="btn btn-primary btn-xs" title="Dois" (click)="Numero(2)">2</button>
+                </td>
+                <td>
+                    <button class="btn btn-primary btn-xs" title="Três" (click)="Numero(3)">3</button>
+                </td>
+                <td>
+                    <button class="btn btn-success btn-xs" title="Multiplicar" (click)="Multiplicar()"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-primary btn-xs" title="Zero" (click)="Numero(0)">0</button>
+                </td>
+                <td>
+                    <button class="btn btn-danger btn-xs" title="Limpar"  (click)="clean()">C</button>
+                </td>
+                <td colspan="2">
+                    <button class="btn btn-warning btn-xs" title="Resultado" style="color:white; font-size: 150%" (click)="Resultado()">=</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
