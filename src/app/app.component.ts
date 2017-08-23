@@ -40,7 +40,6 @@ export class AppComponent implements OnInit {
     Numero(valor){
         this.calculadora = this.calculadora + valor;
         this.numero = this.numero + valor;
-        console.log(this.numero);
     }
 
     Somar(){
@@ -53,7 +52,6 @@ export class AppComponent implements OnInit {
             this.resultado = (this.resultado) + (parseInt(this.numero));
             this.sinal = '+';
             this.numero = '';
-            console.log(this.resultado);
         }
     }
 
@@ -67,7 +65,6 @@ export class AppComponent implements OnInit {
             this.resultado = (parseInt(this.numero)) - (this.resultado);
             this.sinal = '-';
             this.numero = '';
-            console.log(this.resultado);
         }
     }
 
@@ -81,7 +78,6 @@ export class AppComponent implements OnInit {
             this.resultado = parseInt(this.numero);
             this.sinal = 'x';
             this.numero = '';
-            console.log(this.resultado);
         }
     }
 
